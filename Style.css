@@ -1,0 +1,153 @@
+body {
+    background-color: #ff8800;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.phone-frame {
+    width: 360px;
+    height: 640px;
+    background-color: #fff;
+    border: 16px solid #333;
+    border-radius: 30px;
+    padding: 16px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+.app {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.top-bar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 48px;
+}
+
+.top-bar h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.top-bar .icon-btn {
+    position: absolute;
+    top: 0;
+    font-size: 1.2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+}
+
+#trashBtn {
+    left: 0;
+}
+
+#starBtn {
+    right: 0;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+#searchInput {
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+#contactList {
+    flex: 1;
+    overflow-y: auto;
+    margin: 10px 0;
+}
+
+.contact {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 8px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact .info {
+    flex: 1;
+}
+
+.contact .actions {
+    display: flex;
+    gap: 8px;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    padding: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-btn img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#addContactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: auto;
+}
+
+#addContactForm input,
+#addContactForm button {
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+#addContactForm button {
+    background-color: #ff8800;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#addContactForm button:hover {
+    background-color: #0056b3;
+}

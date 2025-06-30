@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de contatos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="phone-frame">
+        <div class="app">
+            <header>
+                <div class="top-bar">
+                    <button id="trashBtn" class="icon-btn" title="Abrir Lixeira">
+                        <img id="trash-icon" src="./Images/Trash.png" width="20" alt="Lixeira" />
+                    </button>
+                    <h1>Contatos</h1>
+                    <button id="starBtn" class="icon-btn" title="Ver Favoritos">
+                        <img id="star-icon" src="./Images/Star.png" width="20" alt="Favoritos" />
+                    </button>
+                </div>
+                <input type="text" id="searchInput" placeholder="Pesquisar contato..." />
+            </header>
+
+            <main id="contactList">
+            </main>
+
+            <form id="addContactForm">
+                <input type="text" id="nameInput" placeholder="Nome do contato" required />
+                <input type="tel" id="phoneInput" placeholder="(xx) xxxxx-xxxx" pattern="\(\d{2}\)\s\d{5}-\d{4}" required />
+                <button type="submit">Adicionar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="Main.js"></script>
+</body>
